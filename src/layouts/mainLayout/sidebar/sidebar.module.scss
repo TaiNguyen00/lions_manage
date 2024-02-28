@@ -1,0 +1,345 @@
+@use "~/scss/" as*;
+
+
+
+.sidebar {
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 100vh;
+  display: none !important;
+  background-color: #195B97;
+
+  display: flex;
+  align-content: space-between;
+  position: relative;
+
+  @include pc {
+    display: block !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+
+
+  .sidebar_title {
+    width: 100%;
+    background-color: #195B97;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 1px #ccc solid;
+
+
+    a {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+  }
+
+  .sideBarMenu {
+
+    list-style: none;
+
+    // .active_link {
+    //   color: #fff;
+    // }
+
+    // .active_link {
+    //   background-color: #ccc;
+    //   color: #555;
+    // }
+
+    .activeMenu {
+
+
+      .MenuFirst {
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        padding: 24px 24px 24px 24px;
+
+        .Menutitle {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          line-height: 1.6rem;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff;
+          text-decoration: none;
+          margin-right: 5px;
+
+          span {
+            margin-right: 10px;
+            cursor: pointer;
+          }
+
+        }
+
+        .Dropdown {
+          cursor: pointer;
+
+          .Icon {
+            color: #fff;
+          }
+        }
+
+        // .childMenu {
+        //   .activeitem {
+        //     background: rgba(255, 255, 255, 0.2);
+        //     // background-color: aqua;
+
+        //     cursor: pointer;
+        //     line-height: 1.6rem;
+        //     display: flex;
+        //     align-items: center;
+        //     font-size: 1rem;
+        //     color: #fff;
+        //     text-decoration: none;
+        //     margin-right: 5px;
+        //     // color: #fff;
+        //     text-decoration: none;
+        //     font-size: 1rem;
+        //     color: #fff;
+        //     text-decoration: none;
+        //     font-size: 1rem;
+
+        //     .item_link {
+        //       margin-left: 60px;
+        //       padding: 4px;
+        //       color: #555;
+
+        //       span {
+        //         margin-right: 10px;
+        //       }
+        //     }
+        //   }
+
+        //   // .itemChild {
+
+
+        //   //   cursor: pointer;
+        //   //   line-height: 1.6rem;
+        //   //   display: flex;
+        //   //   align-items: center;
+        //   //   font-size: 1rem;
+        //   //   color: #fff;
+        //   //   text-decoration: none;
+        //   //   margin-right: 5px;
+        //   //   // color: #fff;
+        //   //   text-decoration: none;
+
+        //   //   font-size: 1rem;
+
+        //   //   .item_link {
+        //   //     margin-left: 60px;
+        //   //     padding: 4px;
+
+        //   //     span {
+        //   //       margin-right: 10px;
+        //   //     }
+        //   //   }
+        //   // }
+        // }
+      }
+
+      // .childMenu {
+      //   .itemChild {
+      //     margin-left: 60px;
+
+      //     .item_link {
+      //       margin-left: 60px;
+      //       cursor: pointer;
+      //       line-height: 1.6rem;
+      //       display: flex;
+      //       align-items: center;
+      //       font-size: 1rem;
+      //       // color: #000;
+      //       text-decoration: none;
+      //       margin-right: 5px;
+      //       // color: #fff;
+      //       text-decoration: none;
+      //       font-size: 1rem;
+      //       color: #fff;
+      //       text-decoration: none;
+      //       font-size: 1rem;
+
+      //       span {
+      //         margin-right: 10px;
+      //       }
+
+      //       .activeitem {
+      //         // margin-left: 60px;
+      //         padding: 10px;
+
+      //         background: rgba(255, 255, 255, 0.2);
+      //         // display: flex;
+      //         // align-items: center;
+      //       }
+
+
+
+      //     }
+
+
+      //     margin-left: 60px;
+      //     padding: 10px;
+
+      //     .item_link {
+      //       cursor: pointer;
+      //       line-height: 1.6rem;
+      //       display: flex;
+      //       align-items: center;
+      //       font-size: 1rem;
+      //       color: #fff;
+      //       text-decoration: none;
+      //       margin-right: 5px;
+      //       text-decoration: none;
+      //       font-size: 1rem;
+
+      //       span {
+      //         margin-right: 10px;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+
+    .activeMenu:last-child {
+      background-color: #195B97;
+    }
+
+    .parentMenu {
+      .MenuFirst {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+
+        .Menutitle {
+          cursor: pointer;
+          line-height: 1.6rem;
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff !important;
+          text-decoration: none;
+          margin-right: 5px;
+
+          span {
+            margin-right: 10px;
+            cursor: pointer;
+          }
+        }
+
+        .Dropdown {
+          cursor: pointer;
+
+          .Icon {
+            color: #fff;
+          }
+        }
+      }
+
+      .childMenu {
+        .activeitem {
+          .item_link {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            line-height: 1.6rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+
+            text-decoration: none;
+            // color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .itemChild {
+          color: #fff;
+
+          .item_link {
+            padding: 15px 0;
+            padding-left: 60px;
+            cursor: pointer;
+            line-height: 1.6rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-right: 5px;
+            // color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        // .item_link {
+        //   cursor: pointer;
+        //   line-height: 1.6rem;
+        //   display: flex;
+        //   align-items: center;
+        //   font-size: 1rem;
+        //   color: #fff;
+        //   text-decoration: none;
+        //   margin-right: 5px;
+        //   // color: #fff;
+        //   text-decoration: none;
+        //   font-size: 1rem;
+
+        //   span {
+        //     margin-right: 10px;
+        //   }
+        // }
+
+      }
+    }
+  }
+
+  .button_logout {
+
+    @include pc {
+
+      .button {
+        border-radius: 5px;
+        font-size: 14px !important;
+        width: 50%;
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        right: 25%;
+        background-color: #ccc;
+        display: inline-block;
+        color: #000;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

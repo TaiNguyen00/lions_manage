@@ -1,0 +1,90 @@
+@use "~/scss/" as*;
+
+
+.container {
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+    @include pc {
+        height: 85vh;
+        width: 96%;
+    }
+
+    .title {
+        width: 96%;
+        font-size: 20px;
+        display: flex;
+        margin: 5px 0;
+
+        /* Kích thước font chung cho mobile */
+        @include pc {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .select {
+        width: 100%;
+        margin-bottom: 0.5rem;
+
+        @include pc {
+            width: 30%;
+            margin-bottom: 1rem;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 14px;
+            /* Kích thước font cho mobile */
+        }
+    }
+
+    .charts {
+        width: 100%;
+        height: 85%;
+
+        @include pc {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .chartjs-render-monitor {
+            .chartjs-chart-override {
+
+                /* Tùy chỉnh CSS cho nhãn */
+                .chartjs-legend {
+                    &-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 16px;
+                        /* Kích thước font chữ */
+                        font-weight: bold;
+                        /* Độ đậm của font chữ */
+                        color: #000;
+                        /* Màu sắc của nhãn */
+                    }
+                }
+            }
+        }
+
+        .chartss {
+            width: 100%;
+            min-height: 400px;
+
+            @include pc {
+                width: 80%;
+                min-height: 400px !important;
+            }
+
+
+        }
+    }
+
+
+
+}

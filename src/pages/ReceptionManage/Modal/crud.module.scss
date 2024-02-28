@@ -1,0 +1,155 @@
+@use "~/scss/" as *;
+$bg: #F2F7FF;
+$color-h: #777777;
+$color-b: #000000;
+$color: #FCBB3E;
+$background: #FFFFFF;
+$border: #D9D9D9;
+
+
+.crudComponent {
+    padding: 0px 0px;
+    margin: 0 auto !important;
+}
+
+.formCrud {
+    position: relative;
+    margin: 10px auto;
+
+    width: 360px;
+    height: 400px;
+    background-color: $background;
+    border-radius: 10px;
+
+    @include pc {
+        width: 520px;
+    }
+
+    .Typography {
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0px;
+    }
+
+    .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .input,
+        .row {
+            width: 300px;
+            height: 92px;
+
+            @include pc {
+                width: 392px;
+                height: 92px;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid $color-b;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.formDelete {
+    position: relative;
+    padding: 32px 27px;
+    width: 350px;
+    height: 200px;
+    background-color: $background;
+    border-radius: 10px;
+
+    @include pc {
+        width: 595px;
+        height: 218px;
+    }
+
+    .Typography {
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0px;
+    }
+}
+
+.button {
+    // right: -12px;
+    // bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include pc {
+        padding-right: 32px !important;
+        // right: 36px;
+        // bottom: 32px;
+    }
+
+    .addBtn {
+        button {
+            text-align: center;
+            width: 90px;
+            height: 40px;
+            background-color: #195B97;
+            border-radius: 10px;
+            color: $background;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .updateBtn {
+        button {
+            text-align: center;
+            width: 90px;
+            height: 40px;
+            background-color: #195B97;
+            border-radius: 10px;
+            color: $background;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .deleteBtn {
+        button {
+            text-align: center;
+            width: 90px;
+            height: 40px;
+            background-color: #FF0000;
+            border-radius: 10px;
+            color: $background;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .closeBtn {
+        button {
+            width: 90px;
+            height: 40px;
+            background-color: #7C9D96;
+            border-radius: 10px;
+            color: $background;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+}

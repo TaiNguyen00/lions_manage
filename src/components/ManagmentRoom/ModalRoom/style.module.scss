@@ -1,0 +1,43 @@
+@use "~/scss/" as*;
+
+.button_save {
+    background-color: #195B97;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+
+.button_close {
+    background-color: #7C9D96;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2px 5px;
+
+}
+
+.end_modal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 10px;
+
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 50px;
+    // align-content: space-between;
+
+    // grid-template-columns: 1fr;
+}
+
+
+
+// .css-ypiqx9-MuiDialogContent-root {
+//     margin: 0 !important;
+// }

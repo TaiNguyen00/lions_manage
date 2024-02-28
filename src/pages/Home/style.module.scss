@@ -1,0 +1,33 @@
+@use '~/scss/' as*;
+
+
+
+.manage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+
+    @include pc {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+.char {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title {
+    padding: 10px 5px;
+    text-align: center;
+
+    &_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        // text-align: center;
+    }
+}

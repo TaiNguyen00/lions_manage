@@ -1,0 +1,189 @@
+@use "~/scss/" as *;
+$bg: #F2F7FF;
+$color-h: #777777;
+$color-b: #000000;
+$color: #53504a;
+$background: #FFFFFF;
+$border: #D9D9D9;
+
+.container {
+    // background-color: #D9D9D9;
+    // width: 100%;
+
+
+    @include pc {
+
+        width: 96%;
+        height: 80vh;
+        // border: 1px solid #000;
+
+        margin: 20px auto;
+        padding: 10px 5px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+        // background-color: $bg;
+        // display: flex;
+
+    }
+
+    // .nav {
+    //     display: none;
+
+    //     @include pc {
+    //         display: block;
+    //         width: 23%;
+    //         height: 100vh;
+    //         background-color: rgb(148, 146, 142);
+    //         margin-right: 5px;
+    //     }
+    // }
+
+    .aside {
+
+        width: 100%;
+        background-color: #FFFFFF;
+
+        @include pc {
+
+            width: 100%;
+            // height: 100vh;
+            background-color: #53504a;
+            background-color: $background;
+        }
+
+        .header {
+            margin: 10px 0;
+            width: 100%;
+            height: 30px;
+            background-color: $color-b;
+            padding: 30px;
+        }
+
+        .content {
+
+            width: 95%;
+            margin: 100px auto;
+
+            @include pc {
+
+                width: 96%;
+                margin: 100px auto;
+                margin-top: 20px;
+            }
+
+            .h2 {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            .row {
+                width: 100%;
+                // display: flex;
+                // justify-content: space-between;
+                margin-bottom: 5px;
+                position: relative;
+
+                .crud {
+                    p {
+                        display: none;
+                    }
+
+                    .button {
+                        display: flex;
+                        align-items: center;
+                        height: 30px;
+                        margin-right: 5px;
+                        background-color: $background;
+                        border: 1px solid $border;
+                        font-weight: bold;
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+
+                    @include pc {
+                        display: flex;
+                        align-items: center;
+
+                        p,
+                        .button {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 15px;
+                        }
+
+                        .button {
+                            color: #000000;
+                            font-size: 12px;
+                            display: flex;
+                            align-items: center;
+                            height: 30px;
+                            margin-right: 5px;
+                            background-color: $background;
+                            border: 1px solid $border;
+                            font-weight: bold;
+                            padding: 5px;
+                            cursor: pointer;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+
+            .select {
+                width: 205px;
+                height: 30px;
+                background-color: $background;
+                border-radius: 0;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+
+            .print {
+                align-items: end;
+                width: 200;
+                height: 30px;
+
+                color: #FFFFFF;
+                position: absolute;
+                bottom: 10px;
+                right: 0;
+            }
+
+
+        }
+
+    }
+
+    .footer {
+        display: flex;
+        // justify-content: center;
+        margin-top: 30px;
+        position: relative;
+
+        @include pc {
+            margin-top: 8rem;
+            justify-content: end;
+            margin-right: 3rem;
+
+
+
+        }
+
+        .footer_tille {
+            position: static;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+}
+
+.box_item {
+    padding: 5px 0;
+}
+
+.MuiStack-root .css-4jnixx-MuiStack-root {
+    width: 100%;
+}

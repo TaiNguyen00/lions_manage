@@ -1,0 +1,78 @@
+@use '~/scss/' as*;
+
+.container {
+    min-width: 180px;
+
+    @include pc {
+        min-width: 250px;
+    }
+
+    .managament {
+        width: 100%;
+        margin: 15px auto;
+
+
+
+        border-radius: 10px;
+        color: #fff;
+
+
+        @include pc {
+            width: 70%;
+
+
+        }
+
+        .title {
+
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+
+            @include pc {
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+        }
+
+        .content {
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid #fff;
+            padding: 10px 20px;
+            font-size: 24px;
+
+            @include pc {
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+        }
+
+        .box {
+            display: flex;
+            // align-items: center;
+            color: #fff;
+            justify-content: flex-end;
+
+            a {
+                color: #fff;
+                display: flex;
+
+                align-items: center;
+                padding: 5px 3px;
+                line-height: 20px;
+                font-size: 12px;
+
+                span {
+                    font-size: 14px;
+                    padding: 0 2px;
+                    color: #fff;
+                }
+
+            }
+
+
+        }
+    }
+}

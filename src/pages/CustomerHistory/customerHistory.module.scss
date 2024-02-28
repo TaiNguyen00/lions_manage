@@ -1,0 +1,70 @@
+@use '~/scss/' as *;
+$bg: #f2f7ff;
+$color-h: #777777;
+$color-b: #000000;
+$color: #fcbb3e;
+$background: #ffffff;
+$border: #d9d9d9;
+
+.container {
+  background-color: #d9d9d9;
+  width: 100%;
+
+  @include pc {
+    width: 96%;
+    background-color: $background;
+    display: flex;
+    height: 80vh;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .aside {
+    width: 100%;
+    background-color: #ffffff;
+
+    @include pc {
+      background-color: $background;
+    }
+
+    .content {
+      width: 95%;
+      margin: 0 auto;
+
+      @include pc {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+
+      .h2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        .input {
+          border-radius: 50px;
+          border-bottom: none;
+        }
+      }
+
+      .select {
+        width: 205px;
+        height: 30px;
+        background-color: $background;
+        border-radius: 0;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+    }
+
+
+  }
+}

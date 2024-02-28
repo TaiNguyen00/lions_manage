@@ -1,0 +1,9 @@
+export { default as Home } from "./Home";
+export { default as CustomerHistory } from "./CustomerHistory";
+export { default as RoomCategory } from "./RoomCategory";
+export { default as ReceptionManage } from "./ReceptionManage";
+export { default as Login } from "./Login";
+export { default as Floors } from "./Floors";
+export { default as StatisticRevenue } from "./StatisticRevenue";
+export { default as StatisticCategory } from "./StatisticCategory";
+export { default as ManagementBill } from "./ManagementBill"

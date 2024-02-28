@@ -1,0 +1,69 @@
+@use '~/scss/' as*;
+
+.container {
+    width: 99%;
+    margin: 0 auto;
+    // box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+
+
+
+    @include pc {
+        width: 550px;
+        height: 500px;
+    }
+
+    .title {
+        padding: 10px 5px;
+        text-align: center;
+
+        &_home {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    .notPiechart {
+        @include pc {
+            max-height: 100%;
+        }
+    }
+
+    .Piechart {
+        @include pc {
+            width: 80%;
+            height: 50vh;
+            margin: 0 auto;
+
+
+        }
+
+        .pie {
+            width: 50%;
+
+            @include pc {
+                // width: 80% !important;
+                // text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // height: 500px !important;
+            }
+        }
+    }
+
+
+
+    .footer {
+        text-align: center;
+        padding-left: 80px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .chartss {
+        height: 350px !important;
+    }
+}

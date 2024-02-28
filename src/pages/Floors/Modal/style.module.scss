@@ -1,0 +1,49 @@
+@use '~/scss/' as*;
+
+.input_room {
+    background-color: black;
+    border: 1px solid red;
+}
+
+.button_save {
+    background-color: #195B97;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+.button_close {
+    background-color: #7C9D96;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+.end_modal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 10px;
+
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+    width: 500px;
+}
+
+#modal-modal-description {
+    margin: 0;
+}
+
+.Input_CusTum {
+    width: 90%;
+}
+
+.from {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 20px;
+}

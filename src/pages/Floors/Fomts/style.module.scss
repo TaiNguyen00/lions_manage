@@ -1,0 +1,17 @@
+@use "~/scss/" as *;
+
+.label {
+    font-size: 16px;
+    // margin: 5px 0;
+    /* 5px top and bottom margin, 0 margin on left and right */
+}
+
+
+
+.input {
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0);
+    border-radius: 10px;
+    color: rgb(105 105 105);
+    border: 1px solid #000000;
+}

@@ -1,0 +1,67 @@
+@use "~/scss/" as *;
+$bg: #F2F7FF;
+$color-h: #777777;
+$color-b: #000000;
+$color: #FCBB3E;
+
+
+.paper {
+
+    margin: 0 auto;
+    border: none;
+
+    @include pc {
+
+        max-height: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tableContainer {
+        max-height: 450px;
+        border-radius: 0px;
+        border: none;
+    }
+}
+
+td {
+    border: none;
+    width: 10%;
+}
+
+.tr:nth-child(2n + 1) {
+    border: none;
+    background-color: rgba(96, 112, 128, 0.1);
+}
+
+
+
+.tr {
+    border: none;
+
+    .TableCell {
+        text-align: center;
+
+        button {
+            background: 0;
+            border: none;
+            margin-right: 5px;
+            color: #607080;
+        }
+
+        .button:first-child:hover {
+            color: #195B97;
+        }
+
+        .button:last-child:hover {
+            color: #FF0000;
+        }
+    }
+
+
+
+}
+
+.css-pdct74-MuiTablePagination-selectLabel {
+    display: none !important;
+}
